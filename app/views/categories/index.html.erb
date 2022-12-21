@@ -1,0 +1,9 @@
+<section>
+  <h2>Categories</h2>
+  <% unless @categories.empty? %>
+    <%= render 'list' %>
+  <% else %>
+    <p>No category available</p>
+  <% end %>
+  <%= link_to 'Add a new category', new_category_path%>
+</section>

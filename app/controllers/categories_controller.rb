@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   def index
-    @groups = current_user.categories
+    @categories = current_user.categories
   end
 
   def show
@@ -8,15 +8,23 @@ class CategoriesController < ApplicationController
   end
 
   def new
-    @group = Category.new
+    @category = Category.new
   end
 
-  def create  
+  def create 
+    @category = Category.create(category_params)
+    @category.user_id = current_user.id 
+
+    if @category.save
+      redirect_to categories_path, notice: 'Category created successfully!'
+    else
+      redirect_to new_category_path, notice: 'Oops!, Category could not be created!'
+    end
   end
 
   private  
 
-  def group_params
-    params.require(:group).permit(:name, :icon)
+  def category_params
+    params.require(:category).permit(:name, :icon)
   end
 end

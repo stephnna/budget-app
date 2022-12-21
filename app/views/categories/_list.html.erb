@@ -1,0 +1,13 @@
+<ul>
+  <% @categories.each do |category| %>
+      <%= link_to category_payments_path(category) do %>
+        <li>
+          <img src="<%= category.icon %>" width="50" height="50" alt="[icon]"/>
+          <div >
+            <span><%= category.name %></span>
+            <span><%= category.created_at.strftime('%d %b %Y') %></span>
+          </div>          
+        </li>
+      <% end %>
+  <% end %>
+</ul>

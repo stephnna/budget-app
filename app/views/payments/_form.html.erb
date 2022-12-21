@@ -1,0 +1,17 @@
+<%= form_with model: @payment, url: category_payments_path, method: :post, local: true do |form| %>
+
+    <div>
+      <%= form.label :name, "Name" %>
+      <%= form.text_field :name, placeholder: "Payment category", required: true%>
+    </div>
+
+    <div>
+      <%= form.label :amount, "Amount"%>
+      <%= form.number_field :amount, placeholder: "Amount", required: true%>
+    </div>
+
+    <div>
+      <%= form.submit "Save", disable_with: "Please wait..." %>
+    </div>
+
+<% end %>
