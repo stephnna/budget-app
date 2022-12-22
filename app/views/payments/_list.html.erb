@@ -1,8 +1,11 @@
-<ul>
-  <% @payments.each do |payment| %>
-    <li>
-      <span><%= payment.name %></span>
-      <span>$<%= payment.amount %></span>
-    </li>
-  <% end %>
-</ul>
+<% @payments.each  do |payment| %>
+  <div class="p-2">
+    <div class="card p-2 bg-light">
+      <div class="card-body">
+        <h5 class="card-title"><%= payment.name %></h5>
+        <p class="card-text">$<%= payment.amount %></p>
+        <p class="card-text"><small class="text-muted"><%= payment.created_at %></small></p>
+      </div>
+    </div>
+  </div>
+<% end %>

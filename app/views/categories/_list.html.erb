@@ -1,13 +1,22 @@
-<ul>
-  <% @categories.each do |category| %>
-      <%= link_to category_payments_path(category) do %>
-        <li>
-          <img src="<%= category.icon %>" width="50" height="50" alt="[icon]"/>
-          <div >
-            <span><%= category.name %></span>
-            <span><%= category.created_at.strftime('%d %b %Y') %></span>
-          </div>          
-        </li>
-      <% end %>
-  <% end %>
-</ul>
+<div class="group-c px-2">
+<% @categories.each do |category| %>
+  <div class="card mb-3 bg-light" >
+    <div class="row g-0">
+      <div class="col-3 py-2 image-c">
+          <%=image_tag "#{category.icon}"%>
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+        <div class= "card-d">
+          <%= link_to category_payments_path(category) do %>
+            <h5 class="card-title"><%= category.name%></h5>
+          <% end %>
+          <small class="card-exp"> $<%= category.total_payment %></small>
+          </div>
+          <p class="card-text"><small class="text-muted"><%= category.created_at.strftime('%d %b %Y')%></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+</div>
