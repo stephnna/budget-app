@@ -10,5 +10,5 @@ class Category < ApplicationRecord
 
   def total_payment
     payments.sum(:amount)
-  end  
+  end
 end

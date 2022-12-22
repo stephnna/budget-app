@@ -6,6 +6,6 @@ RSpec.describe 'Users', type: :request do
 
     it 'should be a success' do
       expect(response).to have_http_status(:ok)
-    end    
+    end
   end
 end
