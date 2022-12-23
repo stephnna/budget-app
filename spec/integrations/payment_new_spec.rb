@@ -19,5 +19,5 @@ RSpec.feature 'Group index', type: :feature do
   end
   it 'display Add New expense button on page' do
     expect(page).to have_button 'Save'
-  end  
+  end
 end
