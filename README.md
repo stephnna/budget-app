@@ -89,6 +89,7 @@ This projects aim is to help users implement a real-world project that
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+- [Video Demo Link](https://www.loom.com/share/ca59940837a04b618b95d787c663d174)
 
 - [Live Demo Link]()
 
