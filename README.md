@@ -148,12 +148,6 @@ To run tests, run the following command:
 Also, you can run `rspec spec/` to run specific tests.
 You can also run `RAILS_ENV=test rspec spec/` to run the tests in test mode.
 
-### Deployment
-
-You can deploy this project using:
-
-- [Railway App](https://railway.app/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHOR -->
@@ -202,6 +196,8 @@ If you like this project. Don't forget to give it a ⭐️
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - A big thanks to [@microverseinc](https://github.com/microverseinc) for the project idea, guidance and inspiration.
+- [Find the original design here](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
