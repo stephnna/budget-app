@@ -89,6 +89,7 @@ This projects aim is to help users implement a real-world project that
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+- [Video Demo Link](https://www.loom.com/share/ca59940837a04b618b95d787c663d174)
 
 - [Live Demo Link]()
 
@@ -146,12 +147,6 @@ To run tests, run the following command:
 `rspec spec` will run all the tests.
 Also, you can run `rspec spec/` to run specific tests.
 You can also run `RAILS_ENV=test rspec spec/` to run the tests in test mode.
-
-### Deployment
-
-You can deploy this project using:
-
-- [Railway App](https://railway.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
